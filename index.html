@@ -83,6 +83,9 @@
   .chips{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:14px}
   .chip{display:flex;align-items:center;gap:10px;padding:12px 12px;border-radius:14px;background:#F7F5F1;font-size:14px;font-weight:600}
   .chip span{flex:none;width:30px;height:30px;border-radius:9px;background:var(--navy);color:var(--gold-soft);display:grid;place-items:center;font-size:12px;font-weight:700}
+  .chip{min-width:0}
+  .chip.wide{grid-column:1/-1}
+  .chip small{display:block;margin-top:4px;font-size:12.5px;font-weight:500;line-height:1.55;color:var(--ink-2)}
 
   .foot{margin:22px 24px 0;text-align:center;font-size:11.5px;color:var(--ink-3);line-height:1.7}
   .foot strong{color:var(--ink-2)}
@@ -202,12 +205,14 @@
     <p class="eyebrow">Consulting</p>
     <h2>주요 컨설팅</h2>
     <div class="chips">
-      <div class="chip"><span>01</span>저축</div>
+      <div class="chip"><span>01</span>달러저축</div>
       <div class="chip"><span>02</span>목표설계</div>
       <div class="chip"><span>03</span>주식·펀드·역외펀드</div>
       <div class="chip"><span>04</span>연금·변액</div>
-      <div class="chip"><span>05</span>보험 리모델링</div>
-      <div class="chip"><span>06</span>NPL</div>
+      <div class="chip wide"><span>05</span><div>보험 리모델링</div></div>
+      <div class="chip wide"><span>06</span><div>법인절세 / 상속·증여 / 가업승계</div></div>
+      <div class="chip wide"><span>07</span><div>펀드·변액보험 투자관리 서비스</div></div>
+      <div class="chip wide"><span>08</span><div>생명·손해보험 종합 컨설팅<small>실손의료비 · 태아 · 어린이 · 치아 · 종신 · 운전자 · 자동차 · 치매 · 간병 등</small></div></div>
     </div>
   </section>
 
